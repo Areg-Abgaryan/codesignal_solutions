@@ -1,5 +1,6 @@
 public class Level2_EdgeOfTheOcean
 {
+    //  # 4
     public static int adjacentElementsProduct(int[] inputArray)
     {
         int product = 0;
@@ -19,6 +20,7 @@ public class Level2_EdgeOfTheOcean
         return product;
     }
 
+    //  # 5
     public static int shapeArea(int n)
     {
         if (n == 1)
@@ -27,6 +29,7 @@ public class Level2_EdgeOfTheOcean
             return shapeArea(n - 1) + 4 * (n - 1);
     }
 
+    //  # 6
     public static int makeArrayConsecutive2(int[] statues)
     {
         boolean[] indexCount = new boolean[21];
@@ -63,6 +66,22 @@ public class Level2_EdgeOfTheOcean
         return count;
     }
 
+    public static boolean almostIncreasingSequence(int[] a)
+    {
+        int count1 = 0 , count2 = 0;
+        
+        for (int i = 0 ; i < a.length-1 ; i++)
+            if(a[i] >= a[i+1])
+                ++count1;
+    
+        for (int i = 0 ; i < a.length-2 ; i++)
+            if(a[i] >= a[i+2])
+                ++count2;
+        
+         return (count1 <= 1) && (count2 <= 1);
+    }
+    
+    //  # 8
     public static int matrixElementsSum(int[][] matrix)
     {
         int cost = 0;
