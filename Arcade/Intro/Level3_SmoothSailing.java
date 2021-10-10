@@ -5,6 +5,25 @@ import java.util.Map;
 
 public class Level3_SmoothSailing
 {
+    //  # 9
+    public static String[] allLongestStrings(String[] inputArray)
+    {
+        int largest = 0;
+        for (int i = 0; i < inputArray.length; ++i)
+            if (inputArray[i].length() > largest)
+                largest = inputArray[i].length();
+        
+        ArrayList<String> list = new ArrayList<String>();
+        
+        for (int i = 0; i < inputArray.length; ++i)
+            if (inputArray[i].length() ==  largest)
+                list.add(inputArray[i]);
+            
+        String[] result = list.toArray(new String[0]);
+        return result;
+    }
+    
+    //  # 10
     public static int commonCharacterCount(String s1, String s2)
     {
         HashMap<Character, Integer> hm1 = new HashMap<>();
@@ -25,6 +44,7 @@ public class Level3_SmoothSailing
         return finalResult;
     }
 
+    //  # 11
     public static boolean isLucky(int n)
     {
         ArrayList<Integer> arr = new ArrayList<>();
@@ -43,6 +63,7 @@ public class Level3_SmoothSailing
         return leftsum == rightsum;
     }
 
+    //  # 12
     public static int[] sortByHeight(int[] a)
     {
         ArrayList<Integer> sortedArray = new ArrayList<>();
@@ -65,6 +86,7 @@ public class Level3_SmoothSailing
         return a;
     }
 
+    //  # 13
     public static String reverseInParentheses(String inputString)
     {
         int firstIndex = inputString.lastIndexOf("(");
