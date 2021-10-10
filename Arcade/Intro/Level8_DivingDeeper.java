@@ -2,6 +2,7 @@ import java.util.HashSet;
 
 public class Level8_DivingDeeper
 {
+    //  # 34
     public static int[] extractEachKth(int[] inputArray, int k)
     {
         int[] extractedArray = new int[inputArray.length - inputArray.length / k];
@@ -18,6 +19,7 @@ public class Level8_DivingDeeper
         return extractedArray;
     }
 
+    //  # 35
     public static char firstDigit(String inputString)
     {
         for (char c: inputString.toCharArray())
@@ -28,6 +30,7 @@ public class Level8_DivingDeeper
         return '0';
     }
 
+    //  # 36
     public static int differentSymbolsNaive(String s)
     {
         HashSet<Character> differentSymbols = new HashSet<>();
@@ -37,6 +40,7 @@ public class Level8_DivingDeeper
         return differentSymbols.size();
     }
 
+    //  # 37
     public static int arrayMaxConsecutiveSum(int[] inputArray, int k)
     {
         int maxPossibleConsecutiveSum = 0;
