@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Uber
 {
     public static double[] fareEstimator(int ride_time, int ride_distance, double[] cost_per_minute, double[] cost_per_mile)
