@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class GoDaddy
 {
     public static String[] domainType(String[] domains)
